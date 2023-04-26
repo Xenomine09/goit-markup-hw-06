@@ -296,7 +296,6 @@ ul {
 .our-products:hover .portfolio-card-text,
 .our-products:focus .portfolio-card-text {
   transform: translate(0, 0);
-
 }
 .our-products {
   display: block;
@@ -386,7 +385,7 @@ ul {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.btn{
+.btn {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -413,7 +412,7 @@ ul {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current-page{
+.current-page {
   position: relative;
   color: #404bbf;
 }
@@ -553,6 +552,12 @@ ul {
   background-color: #2e2f42;
   padding: 100px 0;
 }
+.footer-logo-text{
+  margin-right: 120px;
+}
+.footer-social-media{
+  margin-right: 80px;
+}
 .footer-logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -569,7 +574,6 @@ ul {
 .container.footer {
   display: flex;
   align-items: baseline;
-  gap: 120px;
 }
 
 .footer-social-text {
@@ -622,6 +626,65 @@ ul {
   text-decoration: none;
 }
 
+/* form */
+
+.contact-form-container {
+  width: 453px;
+  height: 80px;
+}
+
+.form-button {
+  display: flex;
+  align-items: center;
+  padding: 8px 24px;
+  margin-left: 24px;
+  margin-bottom: 0;
+  width: 165px;
+  height: 40px;
+  background-color: var(--primary-brand);
+  border-radius: 4px;
+  border: 0;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-button:hover,
+.form-button:focus{
+  background-color: var(--pressed-state);
+}
+.icon-sub{
+  margin-left: auto;
+}
+.email-input::placeholder {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  color: var(--white-text);
+}
+.email-input {
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  background: none;
+  color: var(--white-text);
+  padding: 8px 16px;
+}
+
+.footer-form-text {
+  font-weight: 500;
+  color: var(--white-text);
+  display: block;
+  margin-bottom: 16px;
+}
+
+.subscribe-form-container {
+  display: flex;
+}
+/* form end */
+
 /* modal */
 
 .backdrop {
@@ -671,7 +734,7 @@ ul {
   justify-content: center;
 }
 .modal-btn:hover,
-.modal-btn:focus{
+.modal-btn:focus {
   background-color: var(--pressed-state);
   color: var(--white-background);
 }
